@@ -98,7 +98,7 @@ const OrderSchema = new mongoose.Schema({
   "SKU Name": String,
   "Seller SKU Code": String,
   "Channel Shipping": Boolean
-}, { collection: 'All' });
+}, { collection: 'saleorders' });
 
 const Order = mongoose.model('Order', OrderSchema);
 

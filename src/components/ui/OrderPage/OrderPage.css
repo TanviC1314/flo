@@ -1,8 +1,14 @@
 /* src/App.css */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@100..900&display=swap');
+.order-page {
+    /* margin: 0;
+    font-family: 'Soliel', sans-serif;
+    background-color: #f4f4f9; */
+    /* background-image: url('../../../assets/wave.jpg'); */
+    font-family: "Outfit", sans-serif;
+  }
+  .font-style{
+    font-family: "Outfit", sans-serif;
   }
   
   .dialog-overlay {
@@ -98,3 +104,81 @@ body {
     background-color: #31b0d5;
   }
   
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    padding: 7px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .navbar button:hover {
+    background-color: #c1c9e4;
+    color: #ffffff;
+    border-color: #ffffff;
+    border: #ffffff;
+  }
+
+  .text{
+    color: #1e378b;
+  }
+  .hover\:bg-cloud:hover {
+    background-image: url('../../../assets/cloud.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    position: relative;
+}
+.cat-bed {
+    width: 200px;
+    position: relative;
+    animation: moveBed 4s infinite alternate ease-in-out;
+}
+.zzz {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    animation: floatZzz 2s infinite ease-in-out;
+    opacity: 0;
+}
+.zzz:nth-child(2) {
+    animation-delay: 1s;
+}
+.zzz:nth-child(3) {
+    animation-delay: 2s;
+}
+@keyframes moveBed {
+    0% { transform: translateX(0) rotate(0); }
+    50% { transform: translateX(20px) rotate(5deg); }
+    100% { transform: translateX(0) rotate(0); }
+}
+@keyframes floatZzz {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-40px); opacity: 0; }
+}
+.order-group {
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+.max-height-0 {
+  max-height: 0;
+  opacity: 0;
+}
+.max-height-screen {
+  max-height: 1000px; /* Adjust based on your content size */
+  opacity: 1;
+}

@@ -8,6 +8,7 @@ import otpRoutes from './routes/otp.js';
 // import authMiddleware from './middleware/authMiddleware.js'; // Comment out this line
 import dotenv from 'dotenv';
 
+
 dotenv.config();
 
 connectToMongo();
